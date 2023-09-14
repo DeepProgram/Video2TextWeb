@@ -1,0 +1,90 @@
+.request-body{
+    position: relative;
+    margin: 0 auto;
+    height: 95vh;
+    width: 80%;
+    overflow: hidden;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+}
+.request-body-sidebar-active{
+    width: 90%;
+}
+.options-list{
+    display: flex;
+    justify-content: space-between;
+}
+.requested-list{
+    font-family: var(--font-space-mono);
+    font-size: 0.90rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    max-height: 80%;
+    overflow: auto;
+    padding: 0.5rem 2rem 0.5rem 0.25rem;
+}
+.requested-item{
+    display: grid;
+    grid-template-columns: 54% 44%;
+    gap: 1rem;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    color: #03271D;
+}
+.processing-item{
+    grid-template-columns: 48% 50%;
+}
+.video-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.video-info{
+    justify-self: right;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem; 
+    align-items: center;
+}
+.video-info svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #03271D;
+    cursor: pointer;
+}
+.video-url{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.source-url{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.play-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #03271D;
+    cursor: pointer;
+}
+.empty-list{
+    margin-top: 5rem;
+    border: 2px solid #03271D;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+}
+.message{
+    font-family: var(--font-space-mono);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}

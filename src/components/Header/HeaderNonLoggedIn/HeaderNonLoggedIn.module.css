@@ -1,0 +1,140 @@
+.mobile-menu{
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background: #DDEEF5;
+    height: 10vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+.logo svg{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.logo p{
+    font-family: var(--font-space-mono);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+.list-item{
+    margin-left: 4rem;
+}
+.url{
+    text-decoration: none;
+    background: transparent;
+    font-family: var(--font-space-mono);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.4rem 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid #03271D;
+    letter-spacing: 1px;
+    color: #03271D;
+    cursor: pointer;
+    transition: background 200ms, color 200ms;
+}
+.url:hover{
+    background: #03271D;
+    color: #C6FCEC 
+}
+.btn-bold{
+    background: #03271D;
+    color: #C6FCEC;
+    transition: background 200ms, color 200ms;
+}
+.btn-bold:hover{
+    background: #C6FCEC ;
+    color: #03271D;
+}
+@media screen and (max-width: 1089px){
+    .url{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .list-item{
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width: 960px){
+    .url{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .list-item{
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width: 890px){
+    .url{
+        padding: 0.3rem 0.7rem;
+        font-size: 0.85rem;
+    }
+    .list-item{
+        margin-left: 2.5rem;
+    }
+    .logo svg{
+        width: 2.15rem;
+        height: 2.15rem;
+    }
+    .logo p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 784px){
+    .url{
+        font-size: 0.65rem;
+    }
+    .list-item{
+        margin-left: 1.5rem;
+    }
+    .logo svg{
+        width: 2rem;
+        height: 2rem;
+    }
+    .logo p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 784px){
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 0;
+        padding-top: 0.8rem;
+    }
+    .navigation{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        flex-grow: 3;
+    }
+    .mobile-menu svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .logo{
+        flex-grow: 4;
+    }
+    .logo svg{
+        width: 1.65rem;
+        height: 1.65rem;
+    }
+    .logo p{
+        font-size: 0.9rem;
+    }
+}

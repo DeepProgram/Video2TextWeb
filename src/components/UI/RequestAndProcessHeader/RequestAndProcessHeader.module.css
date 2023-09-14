@@ -1,0 +1,50 @@
+.option-left-items{
+    display: flex;
+    gap: 2rem;
+}
+.btn{
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    outline: 2px solid #03271D;
+    font-family: var(--font-space-mono);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.btn-not-active{
+    border: none;
+    background: #C6FCEC;
+    color: #03271D;
+}
+.btn-not-active:hover{
+    background: #03271D;
+    color: #C6FCEC;
+}
+.btn-active{
+    border: none;
+    background: #03271D;
+    color: #C6FCEC;
+}
+.btn-active:hover{
+    background: #C6FCEC;
+    color: #03271D;
+}
+.add-video{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    background: #03271D;
+    color: #C6FCEC;
+    transform: scale(1);
+    transition: transform 150ms ease-in;
+}
+.add-video:hover{
+    transform: scale(1.1);
+}
+.add-video svg{
+    fill: #C6FCEC;
+    width: 1.25rem;
+    height: 1.25rem;
+}

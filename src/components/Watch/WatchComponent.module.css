@@ -1,0 +1,204 @@
+.page-loader{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch-wrapper{
+    position: relative;
+    height: 90vh;
+    background: #DDEEF5;
+}
+.grid-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1rem 1fr 1fr 2rem 1fr 2rem;
+    position: relative;
+    background: #DDEEF5;
+}
+.grid-container-side-menu-active{
+    grid-template-columns: 0rem 1fr 1fr 1rem 1fr 2rem;
+}
+.text-container{
+    height: 90%;
+    width: 100%;
+    grid-column: 2/span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    overflow: auto;
+    background: #DDEEF5;
+}
+.text-search-container{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+}
+.search-icon-container{
+    display: flex;
+    align-items: center;
+    background: #03271D;;
+    padding: 0.45rem 1rem;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+.search-icon-container svg{
+    width: 1.30rem;
+    height: 1.30rem;
+    fill: #C6FCEC;
+    cursor: pointer;
+}
+.search-text{
+    font-family: var(--font-source-sans-3);
+    font-size: 0.95rem;
+    width: 30%;
+    padding: 0.30rem 1rem;
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 2px solid #bbbdbc;
+    border-right: 0;
+    background: transparent;
+}
+.search-text:focus{
+    outline: none;
+    border-color: #03271D;
+}
+.search-text:focus::placeholder{
+    color: #03271D;
+}
+.text-segments{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    overflow: auto;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+.text-segments p{
+    font-family: var(--font-source-sans-3);
+    padding: 0.35rem 0.85rem;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 150ms ease-in;
+    color: #03271D;
+}
+.text-segments p:hover{
+    transform: scale(1.05);
+}
+.video{
+    grid-column: 5/6;
+    position: relative;
+    overflow: hidden;
+}
+.video-content{
+    height: 50%;
+    position: relative;
+}
+.video-content-side-menu-active{
+    height: 40%;
+    position: relative;
+}
+.video-player{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thumbnail-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 36vh;
+}
+.thumbnail-container-side-menu-active{
+    height: 28vh !important;
+}
+.thumbnail{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    opacity: 1;
+    position: relative; 
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4rem;
+    object-fit: cover;
+    object-position: center;
+}
+.video-player-middle-icon{
+    z-index: 3;
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    fill: #DDEEF5;
+}
+.segement-loader{
+    z-index: 3;
+    position: absolute;
+}
+.download-button-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    height: 2.25rem;
+}
+.download-urls{
+    text-decoration: none;
+    font-family: var(--font-space-mono);
+    font-weight: 700;
+    border: 2px solid #03271D;
+    color: #03271D;
+    padding: 0.25rem 1.5rem;
+    background: transparent;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.download-urls:hover{
+    background: #03271D;
+    color: #C6FCEC;
+}
+.download-button-container-side-menu-active{
+    font-size: 0.85rem !important;
+    padding: 0.15rem 1.25rem !important;
+}
+
+.download-urls-not-active{
+    border: 2px solid #8f8f8f !important;
+    color: #8f8f8f !important;
+}
+.download-urls-not-active:hover{
+    background: transparent !important;
+    color: #8f8f8f !important;
+    cursor: not-allowed;
+}
+.video-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 90%;
+    height: 50%;
+}
+.item{
+    color: #03271D;
+    font-family: var(--font-space-mono);
+    font-size: 0.95rem;
+}
+.item-embed_url{
+    text-decoration: none;
+    color: #03271D;
+}
+.item-embed_url:hover{
+    font-weight: 700;
+}

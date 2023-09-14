@@ -1,0 +1,47 @@
+.menu-content{
+    z-index: 5;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    background: #03271D;
+    width: 22vw;
+    height: 100vh;
+    top: 0;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.menu-option{
+    margin-top: 4rem;
+    font-family: var(--font-space-mono);
+    color: #C6FCEC;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.menu-item{
+    padding: 0.40rem 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-item-active{
+    background: #C6FCEC; 
+    color: #03271D;
+    border-radius: 0.1rem;
+}
+.menu-item-icon{
+    width: 1.15rem;
+    height: 1.15rem;
+    fill: #C6FCEC;
+}
+.menu-item-text{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-item-active-icon{
+    fill: #03271D;
+}

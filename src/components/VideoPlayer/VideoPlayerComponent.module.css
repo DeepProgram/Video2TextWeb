@@ -1,0 +1,69 @@
+.container {
+    position: relative;
+    display: flex;
+    height: 36vh;
+    justify-content: center;
+    align-items: center;
+}
+.container-side-menu-active{
+    height: 28vh;
+}
+.video {
+    border-radius: 0.25rem;
+    height: 100%;
+    width: 100%;
+}
+.container .controls {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.4s;
+    padding: 0 0.5rem;
+}
+.container:hover .controls {
+    opacity: 1;
+}
+.container .controls button {
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 2px 1px 2px #000;
+    border: none;
+    cursor: pointer;
+}
+.middle-control{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 0.25rem;
+}
+.container .controls .timeline {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-right: 3px solid #ccc;
+    border-left: 3px solid #ccc;
+}
+.timeline-side-menu-active{
+    width: 70% !important;
+}
+.container .controls .timeline .bar{
+    background: rgb(1, 1, 65);
+    height: 4px;
+    flex: 1;
+}
+.container .controls .timeline .bar .inner{
+    background: #ccc;
+    width: 20%;
+    height: 100%;
+}
+.fa {
+    width: 1rem;
+    height: 1rem;
+    font-size: 10px !important;
+    fill: white !important;
+}

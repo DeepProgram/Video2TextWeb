@@ -1,0 +1,36 @@
+.video-header-container{
+    background: #DDEEF5;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-container{
+    position: relative;
+}
+.logo{
+    z-index: 6; /* Because SideMenu Z-Index Is 5 */
+    position: fixed;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.4rem;
+    width: 22vw;
+}
+.menu-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    fill: #03271D;
+}
+.menu-icon-sidemenu-active{
+    fill: #C6FCEC;
+}
+.logo-text{
+    font-family: var(--font-space-mono);
+    letter-spacing: 1px;
+}
+.logo-text-sidemenu-active{
+    color: #C6FCEC;
+}

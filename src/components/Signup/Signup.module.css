@@ -1,0 +1,124 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 4rem 1fr 1fr 4rem;
+    height: 90vh;
+    background: #DDEEF5;
+}
+.signup-page-visual{
+    grid-column: 2/3;
+    background: #DDEEF5;
+    display: flex;  
+    flex-direction: column;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.visual-text-container{
+    padding: 2rem 4rem;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.visual-text-container h2{
+    font-family: var(--font-space-mono);
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.visual-text-container p{
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 500; 
+}
+.image{
+    width: 95%;
+    flex-grow: 1;
+    object-fit: cover;
+    object-position: center;
+}
+.signup-form-content-wrapper{
+    grid-column: 3/4;
+    background: #03271D;
+    border-radius: 0.45rem;
+    position: relative;
+    height: 90%;
+    top: 5%;
+}
+.signup-form-content{
+    width: 85%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.signup-form-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup-form-header svg{
+    width: 2rem;
+    height: 2rem;
+    fill: #C6FCEC;
+}
+.signup-form-header h2{
+    font-family: var(--font-space-mono);
+    color: #C6FCEC;
+}
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
+}
+.signup-form label{
+    font-family: var(--font-space-mono);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: #C6FCEC;
+}
+.signup-form input{
+    font-family: var(--font-source-sans-3);
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: #03271D;
+}
+.signup-form input:focus{
+    outline: 2px solid #C6FCEC;
+}
+.radio-input-container{
+    display: flex;
+    gap: 1.5rem;
+}
+.radio-input-container input{
+    padding: 1rem;
+    outline: 0;
+}
+.radio-input-container input:checked, .radio-input-container input:focus{
+    outline: 0;
+    accent-color: #C6FCEC;
+}
+.btn-signup{
+    font-family: var(--font-space-mono);
+    text-transform: uppercase;
+    margin-top: 1.25rem;
+    padding: 0.4rem 1rem;
+    background: transparent;
+    color: #C6FCEC;
+    border: 3px solid #C6FCEC;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size:0.95rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.btn-signup:hover{
+    background: #C6FCEC;;
+    color: #03271D;
+}
