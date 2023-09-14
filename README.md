@@ -6,7 +6,7 @@ Frontend For Video To Text Conversion And Visualization.
 
 ## Backend
 Setup the backend first to run the frontend properly
-[ReuvPlay Backend API](https://github.com/DeepProgram/artetoreAPI)
+[ReuvPlay Backend API](https://github.com/DeepProgram/Video2TextAPI)
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your **.env.local**  file
