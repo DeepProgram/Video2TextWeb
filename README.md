@@ -52,11 +52,16 @@ Video Home
 
 Watch Video
 
+https://github.com/DeepProgram/Video2TextWeb/assets/110674579/4dee3feb-5e4b-47bd-957d-b7af2f75bfb2
+
 Request Video
 
 ![App Screenshot](https://raw.githubusercontent.com/DeepProgram/Video2TextWeb/screenshot/request_video_page.gif)
 
 Process Video
+
+https://github.com/DeepProgram/Video2TextWeb/assets/110674579/e58d6c89-1c26-4329-86ce-997d17311a3f
+
 ## Features
 
 -
